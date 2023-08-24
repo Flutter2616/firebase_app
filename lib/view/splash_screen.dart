@@ -21,7 +21,7 @@ class _SplashscreenState extends State<Splashscreen> {
   }
   @override
   Widget build(BuildContext context) {
-    Timer(Duration(seconds: 3), () => user==false?Get.toNamed('singin'):Get.toNamed('home'));
+    Timer(Duration(seconds: 3), () => user==false?Get.offAllNamed('signin'):Get.offAllNamed('home'));
     return SafeArea(
       child: Scaffold(
         body: Center(
